@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="ed_page.css">
+</head>
+<body class="gback">
+    <div class="box" align="center">
+        <form class="tbt" style="padding: 25px;" name="rname" onsubmit="return fedit()">
+            <table>
+                <tr><td class="stitle" colspan="2" align="center">Login</td></tr>
+                <tr><td style="padding-top: 15px;"></td></tr>
+                <tr>
+                    <td><label for="username" onmouseover="funcalert('Enter your username')">Enter Username<br><br></label></td>
+                    <td><input type="email" id="username" name="username"><br><br></td>
+                </tr>
+                <tr>
+                    <td><label for="password" onmouseover="funcalert('Enter your password')">Password</label><br><br></td>
+                    <td><input type="password" id="password" name="password"><br><br></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center"><input type="submit" value="Login"><br><br></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center"><a class="mpage" href="signup.html">Not Registered?</a><br><br></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <script>
+        function funcalert(content) {
+            alert(content);
+        }
+
+        function fedit() {
+            var uname = document.forms["rname"].username.value;
+            var upass = document.forms["rname"].password.value;
+
+            if (uname === "" || upass === "") {
+                alert('Enter all the fields');
+                return false; 
+            }
+            return true; 
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Task 1</title>
+    <link rel="stylesheet" href="ed_page.css">
+</head>
+<body class="gback">
+    <div class="box" align="center">
+        <form class="tbt" name="fname" style="padding: 30px;" onsubmit="return fedit()">
+            <table>
+                <tr><td class="stitle" colspan="2" align="center">Sign Up</td></tr>
+                <tr><td style="padding-top: 15px;"></td></tr>
+                <tr>
+                    <td><label for="email" onmouseover="funcalert('Enter your email address')">Email ID<br><br></label></td>
+                    <td><input type="email" id="email" name="email"><br><br></td>
+                </tr>
+                <tr>
+                    <td><label for="username" onmouseover="funcalert('Enter your username')">Username</label><br><br></td>
+                    <td><input type="text" id="username" name="username"><br><br></td>
+                </tr>
+                <tr>
+                    <td><label for="password" onmouseover="funcalert('Enter your password')">Password</label><br><br></td>
+                    <td><input type="password" id="password" name="password"><br><br></td>
+                </tr>
+                <tr>
+                    <td><label for="confirm_password" onmouseover="funcalert('Confirm password')">Confirm Password</label><br><br></td>
+                    <td><input type="password" id="confirm_password" name="confirm_password"><br><br></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center"><input type="submit" value="Register"><br><br></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center"><a class="mpage" href="login.html">Already Registered?</a><br><br></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <script>
+        function funcalert(content) {
+            alert(content);
+        }
+
+        function fedit() {
+            var emailrg = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            var uname = document.forms["fname"].username.value;
+            var upass = document.forms["fname"].password.value;
+            var cnfpass = document.forms["fname"].confirm_password.value;
+
+            if (!emailrg.test(umail)) {
+                alert("Invalid email address");
+                return false;
+            }
+
+            if (emailrg === "" || uname === "" || upass === "" || cnfpass === "") {
+                alert("Fill out all the fields");
+                return false;
+            }
+            
+            if (uname.length > 10) {
+                alert("Character limit exceeded for username");
+                return false;
+            }
+
+            if (upass !== cnfpass) {
+                alert("Passwords do not match, check again");
+                return false;
+            }
+            
+            return true; 
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+.gback {
+    background: linear-gradient(to right, #386ccc, #89aae3); 
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mpage {
+    text-decoration: underline;
+    color: rgb(15, 132, 171);
+}
+
+a.mpage:hover {
+    color: rgb(9, 57, 9);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.tbt {
+    box-shadow: 9px 14px 20px rgb(6, 33, 63);
+    border: none;
+    border-style:groove;    
+    background:linear-gradient(to right, white, beige);  
+    border-radius: 7px;
+}
+
+.stitle{
+    border: 1px solid brown;
+    color: whitesmoke;
+    padding: 5px;
+    background-color: rgb(5, 53, 108);
+    margin-bottom: 50px;
+    font-size: 28px;
+}
+*{
+    font-size: 22px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50; 
+    color: white; 
+    padding: 12px 22px; 
+    border: none;
+    border-radius: 4px; 
+    cursor: pointer; 
+    font-size: 18px; 
+}
+
+input[type="submit"]:hover {
+    background-color: #3d9042; 
+}
+
+
