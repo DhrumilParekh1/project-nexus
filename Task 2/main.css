@@ -1,0 +1,73 @@
+.gback {
+    background-image: url(desgn.jpg);
+    z-index: -1;
+}
+
+.head{
+    border: wheat solid 3px;
+    color: rgb(55, 25, 8);
+    font-size: 45px;
+    border-radius: 6px;
+    background-color: beige;
+    margin-left: 150px;
+    margin-top: 30px;
+    margin-right: 150px;
+    box-shadow: 9px 14px 20px rgb(29, 11, 1);
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.mpage {
+    text-decoration: underline;
+    color: rgb(15, 132, 171);
+}
+
+a.mpage:hover {
+    color: rgb(9, 57, 9);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.tbt {
+    box-shadow: 9px 14px 20px rgb(29, 11, 1);
+    border: none;
+    border-style:groove;    
+    background:linear-gradient(to right, white, beige);  
+    border-radius: 7px;
+    margin-left: 150px;
+    margin-top: 50px;
+    margin-right: 150px;
+    margin-bottom: 50px;
+    font-size: 32px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.stitle{
+    box-shadow: 2px 5px 6px rgb(235, 163, 125);
+    margin-bottom: 20px;
+    border: none;
+    color: whitesmoke;
+    padding: 5px;
+    background-color: rgb(55, 25, 8);
+    margin-bottom: 50px;
+    font-size: 35px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+*{
+    font-size: 22px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50; 
+    color: white; 
+    padding: 12px 22px; 
+    border: none;
+    border-radius: 4px; 
+    cursor: pointer; 
+    font-size: 18px; 
+}
+
+input[type="submit"]:hover {
+    background-color: #3d9042; 
+}
+
+
